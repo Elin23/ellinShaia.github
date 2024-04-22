@@ -23,10 +23,11 @@
   }
   html {
     scroll-behavior: smooth;
+       
   }
   body {
     font-family: 'Raleway', sans-serif;
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
   a {
     text-decoration: none;
@@ -407,13 +408,13 @@
     transition: var(--main-transition);
   }
   .footer .box .social .facebook:hover {
-    background-color: #1877f2;
-  }
-  .footer .box .social .twitter:hover {
     background-color: #1da1f2;
   }
+  .footer .box .social .twitter:hover {
+    background-color:#1877f2;
+  }
   .footer .box .social .youtube:hover {
-    background-color: #ff0000;
+    background-color: #ee0a83;
   }
   .footer .box .text {
     line-height: 2;
@@ -568,6 +569,13 @@
     margin-bottom: 80px;
     transition: all 0.5s ease;
   }
+
+  @media (max-width: 767px) {
+    .card {
+      margin-left: 5px;
+    }
+  }
+
   .card:hover {
     transform: scale(1.2);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -656,9 +664,4 @@
       width: 200px;
       height: 300px
     } ;
-  }
-@media (max-width: 767px) {
-    .card {
-      margin-left: 10px;
-    }
   }
